@@ -1,0 +1,73 @@
+body {
+  background: Linen;
+  display: flex;
+  }
+div{
+  margin: auto;
+  justify-self: center;
+  justify-content: center;
+}
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 3.5em;
+  color: FireBrick;
+  margin: auto;
+  justify-self: center;
+  justify-content: center;
+  }
+
+p,u,a {
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 1.6em;
+  color: DarkSlateGray;
+  margin: auto;
+  justify-self: center;
+  justify-content: center;
+  }
+li {
+        display:flex;
+
+}
+a:hover {
+  color: black;
+}
+.sizeofmain{
+  font-size: 2.2em;
+}
+table {
+  margin-top: 2rem;
+}
+.goback{
+  border-style: groove;
+}
+form {
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+form {
+  display: flex;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input {
+
+  border-radius: 5px;
+  border: 1px solid gray;
+}

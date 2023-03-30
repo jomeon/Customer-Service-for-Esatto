@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href='../static/main.css' />
+<html>
+<head>
+    <title>Customer Management System</title>
+</head>
+<body>
+<div>
+    <h1>Customer Management System</h1>
+<div>
+    <ul>
+        <li><a class="sizeofmain"href="{{ url_for('customer_list') }}">List Customers</a></li>
+        <li><a class="sizeofmain"href="{{ url_for('add_customer') }}">Add Customer</a></li>
+        {% for customer in customers %}
+    <a href="{{ url_for('edit_customer', id=customer['_id']|string) }}">Edit</a>
+    {% endfor %}
+    </ul>
+</div>
+</div>
+</body>
+</html>

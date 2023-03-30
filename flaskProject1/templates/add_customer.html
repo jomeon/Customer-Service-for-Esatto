@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href='../static/main.css' />
+<html>
+<head>
+    <title>Add Customer</title>
+</head>
+<body>
+    <h1>Add Customer</h1>
+    <div>
+    <form method="POST" action="{{ url_for('add_customer') }}">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+        <label>VAT Identification Number:</label>
+        <input type="text" name="vat" required><br><br>
+        <label>Address:</label>
+        <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Add">
+    </form>
+    </div>
+    <div>
+    <p><a href="{{ url_for('customer_list') }}">Go back to customer list</a></p>
+    <p><a href="{{ url_for('index') }}">Go back to home page</a></p>
+    </div>
+</body>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+</html>
