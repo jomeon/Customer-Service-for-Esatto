@@ -1,3 +1,3 @@
 # Essato
  Customer Management App
-Cały projekt znajduje się w katalogu projekt
+Cały projekt znajduje się w katalogu flaskProject1
