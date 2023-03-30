@@ -1,3 +1,10 @@
 # Essato
  Customer Management App
-Cały projekt znajduje się w katalogu flaskProject1
+in catalog flaskProject1
+Requires Python and MongoDB installed
+Used:
+*  python -pyflask
+*  js
+* mongodb
+* html/css
+* jinja
